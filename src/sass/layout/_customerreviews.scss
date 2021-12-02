@@ -6,5 +6,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center @include fonts(12px, 500, 2.55);
+  text-align: center;
+  @include fonts(12px, 500, 2.55);
 }
