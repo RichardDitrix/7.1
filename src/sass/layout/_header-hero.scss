@@ -1,3 +1,11 @@
+.hero-header {
+  background-color: #ffb8ca;
+}
+
+.site-nav__link.current {
+  color: var(--red--text-color);
+}
+
 .header-button {
   display: inline-block;
   margin-left: auto;
@@ -13,8 +21,19 @@
 
 .site-nav {
   display: flex;
+  align-items: center;
+  margin-left: 110px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+}
+
+.site-nav__link {
+  color: #ffffff;
 }
 
 .site-nav .site-nav__item + .site-nav__item {
-  margin-left: 37px;
+  margin-left: 35px;
 }
