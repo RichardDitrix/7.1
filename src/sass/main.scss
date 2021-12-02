@@ -8,9 +8,8 @@
 // COMPONENTS
 
 @import './compoents/container';
-
-// LAYOUT
-@import './layout/header-hero';
+@import './compoents/section' // LAYOUT
+  @import './layout/header-hero';
 @import './layout/products';
 @import './layout/about';
 @import './layout/advantages';
