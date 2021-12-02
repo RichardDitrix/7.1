@@ -1,5 +1,19 @@
 .contacts {
   background-color: var(--bgthird--background--color);
+//   background-image: linear-gradient(
+//   to bottom,
+//   #f44336 15%,
+  
+//   #FFF5F6
+// );
+ background-image: linear-gradient(
+    to bottom,
+
+    #ffffff 84px,
+    #FFF5F6 84px,
+    #FFF5F6 
+    
+  );
   //   padding-bottom: 165px;
   padding-bottom: 115px;
 }
@@ -119,6 +133,10 @@
   text-align: center;
   border-radius: 22px;
   border: none;
+
+  cursor: pointer;
+  // &:focus,
+  // &:hover
 }
 
 .contacts-btn__link-white {
