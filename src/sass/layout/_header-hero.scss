@@ -1,0 +1,20 @@
+.header-button {
+  display: inline-block;
+  margin-left: auto;
+}
+
+.header-button__icon {
+  fill: var(--svgsecond--color);
+}
+
+.main-nav {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .site-nav__item + .site-nav__item {
+  margin-left: 37px;
+}
