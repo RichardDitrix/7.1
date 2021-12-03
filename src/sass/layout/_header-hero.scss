@@ -85,8 +85,12 @@
 
 .hero {
   background-color: #ffb8ca;
+}
+
+.hero .container {
   position: relative;
-  height: 578px;
+  padding-top: 86px;
+  padding-bottom: 45px;
 }
 
 .title {
@@ -94,8 +98,12 @@
   margin-right: auto;
 }
 
+.hero-title {
+}
+
 .hero-title__main {
   display: block;
+  // padding-top: 84px;
   width: 277px;
   height: 137px;
   font-family: Titan One;
@@ -115,9 +123,17 @@
   color: var(--red--text-color);
 }
 
+.hero-coffeehouse__title {
+  font-family: Titan One;
+  font-size: 46px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: var(--red--text-color);
+}
+
 .hero-ice-cream {
   position: absolute;
-  top: 21px;
+  bottom: 0;
   left: 516px;
 }
 
@@ -130,6 +146,7 @@
 .hero-description {
   display: block;
   width: 200px;
+  margin-left: 30px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
@@ -140,6 +157,7 @@
 
 .hero-description__btn {
   display: flex;
+  margin-top: 20px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -149,4 +167,17 @@
   border-radius: 50%;
   background-color: var(--btnbgwhite--background-color);
   fill: var(--svgsecond--color);
+}
+
+.hero-milk-description {
+  display: flex;
+  align-items: center;
+  margin-top: 56px;
+}
+
+.hero-coffeehouse {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 92px;
 }
