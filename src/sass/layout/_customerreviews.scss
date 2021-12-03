@@ -17,6 +17,8 @@
 .slider__item {
   width: 100%;
   margin-bottom: 30px;
+  @include fonts(12px, 500, 2.55, 0.03em);
+  color: var(--primary-text-color);
 }
 .slider__text {
   @include fonts(12px, 500, 2.55, 0.03em);
