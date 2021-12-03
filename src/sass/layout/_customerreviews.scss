@@ -6,8 +6,8 @@
     width: 280px;
   }
 }
-.swiper-wrapper {
-}
+// .swiper-wrapper {
+// }
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -17,8 +17,6 @@
 .slider__item {
   width: 100%;
   margin-bottom: 30px;
-  @include fonts(12px, 500, 2.55, 0.03em);
-  color: var(--primary-text-color);
 }
 .slider__text {
   @include fonts(12px, 500, 2.55, 0.03em);
