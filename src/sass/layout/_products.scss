@@ -43,12 +43,10 @@
   color: var(--white--text-color);
   &::before {
     content: '';
-
     display: inline-block;
     margin-right: 10px;
     width: 249px;
     height: 242px;
-
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
