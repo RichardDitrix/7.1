@@ -1,15 +1,26 @@
 .contacts {
   background-image: linear-gradient(to bottom, #ffffff 84px, #fff5f6 84px, #fff5f6);
   padding-bottom: 115px;
-  //   padding-bottom: 165px;
+
+  //   @media screen and (min-width: 1200px) {
+  //     padding-bottom: 165px;
+  // }
+  
 }
 
 .contacts__list {
   display: flex;
-  flex-wrap: wrap;
-  //   margin-left: -30px;
+  flex-wrap:wrap;
   align-items: center;
   justify-content: center;
+  margin-left: -50px;
+  
+   @media screen and (min-width: 480px) {
+    display: flex;
+     flex-wrap: nowrap;
+
+  }
+
 }
 
 .contacts__item {
@@ -17,11 +28,28 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   max-width: 220px;
-  margin-bottom: 20px;
+  margin-left: 50px;
   padding: 43px 20px 43px 20px;
 
-  @include fonts(12px, 500, 1.5, 0.04em);
+  &:not(:last-child) {
+  margin-bottom: 20px;
 }
+
+ @media screen and (min-width: 480px) {
+     width: 330px;
+      margin-bottom: 80px;
+  }
+   @media screen and (min-width: 1280px) {
+      margin-bottom: 85px;
+  }
+  
+    @include fonts(12px, 500, 1.5, 0.04em);
+}
+
+
+ 
+
+ 
 
 .contacts__category {
   background: var(--bgyellow--backgorund-color);
@@ -104,6 +132,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 55px;
+
+  //  @media screen and (min-width: 479px) {
+  //   display: flex;
+  // }
+  
 }
 
 .contacts-btn__link {
@@ -123,12 +157,16 @@
   border: none;
 
   cursor: pointer;
-  // &:focus,
-  // &:hover
+  
 }
 
 .contacts-btn__link-white {
   background-color: var(--btnbgwhite--background-color);
   color: var(--red--text-color);
   margin-top: 10px;
+  
+
+   @media screen and (min-width: 480px) {
+    margin-left:15px;
+  }
 }
