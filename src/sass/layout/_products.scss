@@ -1,0 +1,43 @@
+.product {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  width: 100%;
+}
+.products__label {
+  margin-bottom: 15px;
+  font-family: Titan One;
+  @include fonts(18px, 400, 1.17, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--pink--text-color);
+}
+.products__title {
+  margin-bottom: 30px;
+  font-family: Titan One;
+  @include fonts(34px, 400, 1.15, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--red--text-color);
+}
+.products__container {
+}
+.products__list {
+}
+.products__item {
+  width: 280px;
+  height: 485px;
+  background: var(--bgmain--backgorund-color);
+  border-radius: 24px;
+}
+.product-wrap {
+}
+.product-wrap__title {
+}
+.product-wrap__text {
+}
+.btn {
+}
+.read-more {
+}
+.read-more__text {
+}
