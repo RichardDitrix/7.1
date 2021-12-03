@@ -68,7 +68,9 @@ textarea {
 }
 button,
 select {
+  cursor: pointer;
   text-transform: none;
+  padding: 0;
 }
 [type='button'],
 [type='reset'],
