@@ -2,17 +2,15 @@
 @import './utils/variables';
 @import './utils/visuallyhidden';
 @import './utils/mixin';
-// BASE
 
+// BASE
 @import './base/base';
 
 // COMPONENTS
-
-@import './compoents/container';
 @import './compoents/section';
+@import './compoents/container';
 
 // LAYOUT
-
 @import './layout/header-hero';
 @import './layout/products';
 @import './layout/about';

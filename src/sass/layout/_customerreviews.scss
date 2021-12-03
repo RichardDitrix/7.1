@@ -20,12 +20,12 @@
 }
 .slider__text {
   @include fonts(12px, 500, 2.55, 0.03em);
-  color: var(--primary-text-color);
+  color: var(--primary--text-color);
 }
 .swiper-pagination {
   position: relative;
 }
 .pagination__text {
   @include fonts(12px, 500, 1.86, 0.03em);
-  color: var(--primary-text-color);
+  color: var(--primary--text-color);
 }
