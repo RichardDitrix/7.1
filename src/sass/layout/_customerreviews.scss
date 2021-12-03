@@ -8,4 +8,9 @@
   align-items: center;
   text-align: center;
   @include fonts(12px, 500, 2.55, 0.03em);
+  color: var(--primary-text-color);
+}
+.slider__item {
+  color: var(--primary-text-color);
+  color: #000000;
 }
