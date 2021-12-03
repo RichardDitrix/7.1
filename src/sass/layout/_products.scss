@@ -24,20 +24,51 @@
 .products__list {
 }
 .products__item {
+  margin: 0 auto;
   width: 280px;
   height: 485px;
   background: var(--bgmain--backgorund-color);
   border-radius: 24px;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 .product-wrap {
 }
 .product-wrap__title {
+  font-family: Titan One;
+  @include fonts(20px, 400, 1.15, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white--text-color);
+  &::before {
+    content: '';
+
+    display: inline-block;
+    margin-right: 10px;
+    width: 249px;
+    height: 242px;
+    background-image: url('.../');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .product-wrap__text {
+  margin-bottom: 30px;
+  @include fonts(14px, 700, 1.52, 0.04em);
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--white--text-color);
 }
 .btn {
 }
 .read-more {
+  overflow: hidden;
 }
 .read-more__text {
+  @include fonts(14px, 700, 1.52, 0.04em);
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--white--text-color);
 }
