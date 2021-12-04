@@ -12,7 +12,7 @@
   color: var(--pink--text-color);
 }
 .products__title {
-  margin-bottom: 30px;
+  margin-bottom: 145px;
   font-family: Titan One;
   @include fonts(34px, 400, 1.15, 0.04em);
   text-align: center;
@@ -20,25 +20,54 @@
   color: var(--red--text-color);
 }
 .products__container {
-  position: relative;
 }
 .products__list {
 }
 .products__item {
+  height: 725px;
+}
+// .products__item--pink {
+//   &::before {
+//     content: '';
+//     display: block;
+//     // position: absolute;
+//     margin-right: 10px;
+//     width: 249px;
+//     height: 242px;
+//     background: {
+//       image: url('../images/products/products-1.png');
+//       size: cover;
+//       repeat: no-repeat;
+//     }
+//     @media screen and (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url('../images/products/products-1@2x.png');
+//     }
+//   }
+// }
+// .product-wrap {
+//   position: relative;
+//   &:not(:last-child) {
+//     margin-bottom: 15px;
+//   }
+// }
+.product-wrap--pink {
+  padding: 161px 40px 40px 40px;
+
+  position: relative;
   margin: 0 auto;
   width: 280px;
   height: 485px;
   border-radius: 24px;
-  &:not(:last-child) {
-    margin-bottom: 15px;
-  }
-}
-.products__item--pink {
   background: var(--bgmain--backgorund-color);
   &::before {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
     content: '';
     display: block;
-    // position: absolute;
     margin-right: 10px;
     width: 249px;
     height: 242px;
@@ -54,10 +83,20 @@
     }
   }
 }
-.products__item--yellow {
+.product-wrap--yellow {
+  padding: 161px 40px 40px 40px;
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+  height: 485px;
+  border-radius: 24px;
   background: var(--bgyellow--backgorund-color);
 
   &::before {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
     content: '';
     display: block;
     margin-right: 10px;
@@ -75,10 +114,20 @@
     }
   }
 }
-.products__item--green {
+.product-wrap--green {
+  padding: 161px 40px 40px 40px;
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+  height: 485px;
+  border-radius: 24px;
   background: var(--bggreen--backgorund-color);
 
   &::before {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
     content: '';
     display: block;
     margin-right: 10px;
