@@ -70,6 +70,8 @@
 
 .slider__text {
   width: 100%;
+  z-index: 2;
+  position: relative;
   @include fonts(12px, 500, 2.55, 0.03em);
   background-image: repeating-linear-gradient(
     to bottom,
@@ -97,18 +99,26 @@
     width: 750px;
     @include fonts(16px, 500, 1.86, 0.03em);
   }
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--sliderbg3--background-color),
+    var(--sliderbg3--background-color) 29px,
+    var(--sliderborder-color) 21px,
+    var(--sliderborder-color) 30px
+  );
 }
-.slider__text::before {
+.slider__bacgkround::before {
+  display: block;
   content: '';
   position: absolute;
+  z-index: 3;
   width: 100%;
   height: 100%;
   top: 28px;
   left: 61px;
   background-image: url(../images/quotes.svg);
   background-repeat: no-repeat;
-  background-color: transparent;
-  color: transparent;
+
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     left: 45px;
   }
