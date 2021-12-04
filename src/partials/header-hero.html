@@ -17,6 +17,13 @@
         </ul>
       </nav>
 
+<!-- Кнопка открытия мобильного меню -->
+      <button type="button" class="menu-open" aria-label="menu-open">
+        <svg class="" width="30" height="19">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+    
 <!-- Кновка купить сейчас -->
       <button type="button" class="header-button">
         Buy now
@@ -24,21 +31,96 @@
           <use href="./images/icons.svg#icon-arrow-btn"></use>
         </svg>
       </button>
+    </div>
+  </div>
 
-      <!-- Кнопка открытия мобильного меню -->
-      <button type="button" class="menu-open" aria-label="menu-open">
-        <svg class="" width="20" height="13">
-          <use href="./images/icons.svg#icon-burger"></use>
+  <!-- Мобильное меню -->
+  <div class="mob-menu is-hidden">
+    <div class="container">
+      <button type="button" class="menu-close" aria-label="menu-close">
+        <svg class="" width="14" height="14">
+          <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <button type="button" class="header-button">
+        Buy now
+        <svg class="header-button__icon" width="6" height="10">
+          <use href="./images/icons.svg#icon-arrow-btn"></use>
+        </svg>
+      </button>
+      <ul class="site-nav list">
+        <li class="site-nav__item">
+          <a href="/" class="mob-menu-link">Home</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="" class="mob-menu-link">About us</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="" class="mob-menu-link">How it’s made?</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="" class="mob-menu-link">Our products</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="" class="mob-menu-link">Contact</a>
+        </li>
+      </ul>
+      <!-- <div class="mob-menu-bottom">
+        <ul class="mob-contacts-list list">
+          <li class="mob-contacts-item">
+            <a href="tel:+380961111111" class="mob-contacts-link mob-contacts-link-big">+38 096 111 11 11</a>
+          </li>
+          <li class="mob-contacts-item">
+            <a href="mailto:info@devstudio.com" class="mob-contacts-link">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mob-social-list list">
+          <li class="mob-social-item">
+            <a href="" class="mob-social-link" aria-label="Instagram">Instagram</a>
+          </li>
+          <li class="mob-social-item">
+            <a href="" class="mob-social-link" aria-label="Twitter">Twitter</a>
+          </li>
+          <li class="mob-social-item">
+            <a href="" class="mob-social-link" aria-label="Facebook">Facebook</a>
+          </li>
+          <li class="mob-social-item">
+            <a href="" class="mob-social-link" aria-label="LinkedIn">LinkedIn</a>
+          </li>
+        </ul>
+      </div> -->
     </div>
   </div>
 </header>
+
 
 <!-- Герой -->
 <section class="hero">
   <div class="container">
 
+<!-- Основное изображение "Мороженое" -->
+    <div class="hero-ice-cream">
+      <picture>
+        <source media="(min-width: 1280px)" srcset="./images/hero-header/hero-desktop.webp         1x,
+                              ./images/hero-header/hero-desktop@2x.webp      2x" type="image/webp" />
+        <source media="(min-width: 1280px)" srcset="./images/hero-header/hero-desktop.png          1x,
+                              ./images/hero-header/hero-desktop@2x.png       2x" />
+    
+        <source media="(min-width: 768px)" srcset="./images/hero-header/hero-tablet.webp          1x,
+                              ./images/hero-header/hero-tablet@2x.webp       2x" type="image/webp" />
+        <source media="(min-width: 768px)" srcset="./images/hero-header/hero-tablet.png           1x,
+                              ./images/hero-header/hero-tablet@2x.png        2x" />
+    
+        <source media="(max-width: 767px)" srcset="./images/hero-header/hero.webp                 1x,
+                              ./images/hero-header/hero@2x.webp              2x" type="image/webp" />
+        <source media="(max-width: 767px)" srcset="./images/hero-header/hero.png                  1x,
+                              ./images/hero-header/hero@2x.png               2x" />
+    
+        <img class="ice-cream-photo" src="./images/hero-header/hero.png" alt="Ice Cream" />
+      </picture>
+    </div>
+
+    
 <!-- Основной заголовок с кнопками -->
     <div class="hero-title">
       <h1 class="hero-title__main">
@@ -52,8 +134,8 @@
 
 <!-- Количество кафе и фуд-траков -->
     <div class="hero-coffeehouse">
-      <p class=""><span class="hero-coffeehouse__title">16</span> cafes</p>
-      <p><span class="hero-coffeehouse__title">23</span> food trucks</p>
+      <p class="hero-coffeehouse__descr"><span class="hero-coffeehouse__title">16</span> cafes</p>
+      <p class="hero-coffeehouse__descr"><span class="hero-coffeehouse__title">23</span> food trucks</p>
     </div>
 
 <!-- Кувшин с молоком и описание     -->
@@ -72,36 +154,6 @@
       </div>
     </div>
 
-<!-- Основное изображение "Мороженое" -->
-    <div class="hero-ice-cream">
-      <picture> 
-        <source media="(min-width: 1280px)" 
-                srcset="./images/hero-header/hero-desktop.webp         1x,
-                        ./images/hero-header/hero-desktop@2x.webp      2x" 
-                type="image/webp" />
-        <source media="(min-width: 1280px)" 
-                srcset="./images/hero-header/hero-desktop.png          1x,
-                        ./images/hero-header/hero-desktop@2x.png       2x" />
-      
-        <source media="(min-width: 768px)" 
-                srcset="./images/hero-header/hero-tablet.webp          1x,
-                        ./images/hero-header/hero-tablet@2x.webp       2x" 
-                type="image/webp" />
-        <source media="(min-width: 768px)" 
-                srcset="./images/hero-header/hero-tablet.png           1x,
-                        ./images/hero-header/hero-tablet@2x.png        2x" />
-      
-        <source media="(max-width: 767px)" 
-                srcset="./images/hero-header/hero.webp                 1x,
-                        ./images/hero-header/hero@2x.webp              2x" 
-                type="image/webp" />
-        <source media="(max-width: 767px)" 
-                srcset="./images/hero-header/hero.png                  1x,
-                        ./images/hero-header/hero@2x.png               2x" />
-      
-      <img class="ice-cream-photo" src="./images/hero-header/hero.png" alt="Ice Cream" />
-      </picture>
-    </div>
 
 <!-- Изображение девушки -->
     <div class="hero-girl">

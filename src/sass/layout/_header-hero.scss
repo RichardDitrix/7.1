@@ -1,7 +1,7 @@
 .header {
   display: flex;
   align-items: center;
-  padding-top: 35px;
+  padding-top: 37px;
 
   @media screen and(max-width:767px) {
     padding-top: 6px;
@@ -24,6 +24,14 @@
 .hero-btn {
   display: flex;
   margin-top: 25px;
+
+  @media screen and(max-width: 767px) {
+    margin-top: 19px;
+  }
+
+  @media screen and(max-width: 1279px) {
+    margin-top: 20px;
+  }
 }
 
 .header-button,
@@ -47,6 +55,52 @@
   @media screen and(max-width: 767px) {
     display: none;
   }
+
+  @media screen and(max-width: 1279px) {
+    margin-left: 30px;
+  }
+}
+
+.menu-open,
+.menu-close {
+  display: flex;
+  border: none;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  background-color: transparent;
+}
+
+.menu-close {
+  @media screen and(min-width: 1279px) {
+    display: none;
+  }
+}
+
+.menu-open {
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #e17992;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+
+  &.is-hidden {
+    pointer-events: none;
+    opacity: 0;
+    visibility: auto;
+  }
 }
 
 .menu-open {
@@ -63,6 +117,12 @@
   @media screen and(min-width:1280px) {
     display: none;
   }
+}
+
+.menu-close {
+  fill: var(--btnbgwhite--background-color);
+  background-color: transparent;
+  border: none;
 }
 
 .hero-btn__one {
@@ -96,6 +156,7 @@
     height: 24px;
     font-size: 8px;
     line-height: 1.25;
+    margin-left: 8px;
   }
 }
 
@@ -135,11 +196,19 @@
 .hero {
   background-color: #ffb8ca;
   height: 446px;
+
+  @media screen and(min-width: 768px) {
+    height: 312px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    height: 578px;
+  }
 }
 
 .hero .container {
   position: relative;
-  padding-top: 86px;
+  padding-top: 21px;
   padding-bottom: 45px;
 }
 
@@ -150,7 +219,15 @@
 
 .hero-title {
   position: absolute;
-  z-index: 10;
+  top: 137px;
+
+  @media screen and(min-width: 768px) {
+    top: 15px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    top: 84px;
+  }
 }
 
 .hero-title__main {
@@ -164,7 +241,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--white--text-color);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   @media screen and(max-width:767px) {
     width: 218px;
@@ -192,32 +269,57 @@
   color: var(--red--text-color);
 }
 
+.hero-coffeehouse__descr {
+  color: var(--white--text-color);
+
+  @media screen and(max-width: 1279px) {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+
+  @media screen and(mix-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
 .hero-ice-cream {
   position: absolute;
-  bottom: 0;
+
+  @media screen and(min-width: 1280px) {
+    left: 517px;
+  }
 
   @media screen and(max-width: 767px) {
     right: 32px;
     top: 36px;
     height: 345px;
   }
+
+  @media screen and(min-width: 767px) and (max-width: 1279px) {
+    top: -20px;
+    left: 378px;
+  }
 }
 
-.ice-cream-photo::after {
-  content: '';
-  position: absolute;
-  width: 100%;
+// .hero-ice-cream:before {
+//   content: '';
+//   position: relative;
+//   width: 455px;
+//   height: 455px;
+//   border-radius: 50%;
+//   background: var(--bgsecond--backgorund-color);
+//   top: 0;
+//   left: 136px;
+//   overflow: hidden;
+//   display: block;
+// }
 
-  background: blue;
-  border-radius: 50%;
-  display: flex;
-  bottom: 0;
-}
-
-.ice-cream-photo {
-  width: 100%;
-  height: auto;
-}
+// .ice-cream-photo {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+// }
 
 .hero-girl {
   position: absolute;
@@ -262,6 +364,14 @@
 
   @media screen and(max-width:767px) {
     display: none;
+  }
+
+  @media screen and(min-width:768px) {
+    bottom: 28px;
+  }
+
+  @media screen and(min-width:1280px) {
+    bottom: 28px;
   }
 }
 
