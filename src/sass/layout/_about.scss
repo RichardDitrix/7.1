@@ -4,12 +4,10 @@
   background-position: center bottom 10%;
   background-repeat: no-repeat;
   background-color: var(--bgthird--background--color);
-  background-image: url('../images/About/about-2.png');
+  background-image: url('../images/about/about-2.png');
 
-  @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url('../images/About/about-2@2x.png');
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/about/about-2@2x.png');
   }
 }
 
