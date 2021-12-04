@@ -1,23 +1,70 @@
 .section--about {
   padding: 125px 0 39px 0;
-  background-size: 100% auto;
+  background-size: contain;
   background-position: center bottom 10%;
   background-repeat: no-repeat;
   background-color: var(--bgthird--background--color);
   background-image: url('../images/about/about-2.png');
 
-  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url('../images/about/about-2@2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 130px 0 66px 0;
+    background-image: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 125px 0 39px 0;
+    background-image: url('../images/about/about-2-desktop.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/about/about-2-desktop@2x.png');
+    }
+  }
+
+  .container {
+    @media screen and (min-width: 768px) {
+      padding: 0 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 1122px;
+    }
   }
 }
 
-// .section--about__content {
-// }
+.section--about__content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: 0 -8px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 0 -37px;
+  }
+}
 
 .section--about__picture {
   max-width: 280px;
   margin: 0 auto 46px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    max-width: none;
+    width: 50%;
+    margin: 0;
+    padding: 0 8px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0 37px;
+  }
 
   img {
     display: inline-block;
@@ -28,12 +75,41 @@
 .section--about__description {
   max-width: 220px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: none;
+    width: 50%;
+    margin: 0;
+    padding: 50px 8px 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 50px 37px 0;
+  }
+}
+
+.section--about__paragraf {
+  @media screen and (min-width: 768px) {
+    margin-bottom: -49px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: -35px;
+  }
 }
 
 .section--about__title {
   @extend %title;
   text-align: center;
   margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 55px;
+  }
 }
 
 .section--about__subtitle {
@@ -46,6 +122,16 @@
   font-family: DM Sans;
   color: var (--primary-text-color);
   margin-bottom: 47px;
+
+  @media screen and (min-width: 768px) {
+    @include fonts(14px, 500, 1.18, 0);
+    margin-bottom: 49px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include fonts(16px, 500, 1.18, 0.04em);
+    margin-bottom: 35px;
+  }
 }
 
 .section--about__text--grey {
@@ -69,6 +155,21 @@
   &:focus {
     background-color: var(--btnbggrey--background-color);
   }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 62px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 176px;
+    margin-top: 45px;
+  }
+}
+
+.section--about__icon {
+  width: 4.43px;
+  height: 8px;
+  margin-left: 13.62px;
 }
 
 // шаблоны заголовков
@@ -77,6 +178,14 @@
   font-family: Titan One;
   text-transform: uppercase;
   color: var(--red--text-color);
+
+  @media screen and (min-width: 768px) {
+    @include fonts(48px, 400, 1.15, 0.04em);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include fonts(58px, 400, 1.13, 0.06em);
+  }
 }
 
 %subtitle {
@@ -85,4 +194,12 @@
   text-transform: uppercase;
   color: var(--pink--text-color);
   margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    @include fonts(26px, 400, 1.15, 0);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include fonts(30px, 400, 1.13, 0.04em);
+  }
 }
