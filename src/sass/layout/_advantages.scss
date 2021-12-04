@@ -72,6 +72,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/advantages-1@2x.png);
+  }
+
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
   }
@@ -87,6 +91,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/advantages-2@2x.png);
+  }
+
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
   }
@@ -101,6 +109,10 @@
   background-image: url(../images/advantages/advantages-3.png);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/advantages-3@2x.png);
+  }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
