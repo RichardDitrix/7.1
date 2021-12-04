@@ -1,25 +1,27 @@
 .contacts {
   background-image: linear-gradient(to bottom, #ffffff 84px, #fff5f6 84px, #fff5f6);
-  padding-bottom: 115px;
+  padding-bottom: 105px;
 
-  @media screen and (min-width: 768px) {
-    padding-bottom: 165px;
+  @media screen and (min-width: 780px) {
+    padding-bottom: 155px;
   }
-  // @media screen and (min-width: 1280px) {
-  //   background-image: url(../src/images/contacts/contacts.png);
-  // }
+
+  
+  @media screen and (min-width: 1280px) {
+    background-image: url(../src/images/contacts/contacts.png);
+  }
 }
 
 .contacts__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-left: -50px;
 
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (min-width: 780px) {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
     margin-left: -20px;
   }
   @media screen and (min-width: 1280px) {
@@ -35,12 +37,11 @@
   margin-left: 50px;
   padding: 43px 20px 43px 20px;
 
-  @media screen and (max-width: 479px) {
-    &:not(:last-child) {
+  // &:not(:last-child) {
       margin-bottom: 20px;
-    }
-  }
-  @media screen and (min-width: 480px) {
+    
+  // }
+  @media screen and (min-width: 780px) {
     width: 330px;
 
     margin-left: 20px;
@@ -161,17 +162,18 @@
 }
 
 .contacts-btn {
-  @media screen and (max-width: 479px) {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 55px;
-  }
+    margin-top: 35px;
+  
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 780px) {
     margin-top: 80px;
     display: flex;
+     flex-direction: row;
     justify-content: center;
   }
 
@@ -191,6 +193,7 @@
   border: none;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 1, 1);
+margin-bottom:10px;
 
   &:hover,
   &:focus {
@@ -221,18 +224,17 @@
   background-color: var(--btnbgwhite--background-color);
   color: var(--red--text-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 1, 1);
-
+//  margin-top: 10px;
   &:hover,
   &:focus {
     background-color: var(--btnbggrey--background-color);
   }
-  @media screen and (max-width: 480px) {
-    margin-top: 10px;
-  }
-  @media screen and (min-width: 480px) {
+ 
+  @media screen and (min-width: 780px) {
     margin-left: 15px;
     min-width: 175px;
     height: 45px;
+   
   }
   @media screen and (min-width: 1280px) {
     min-width: 180px;
