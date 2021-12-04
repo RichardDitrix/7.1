@@ -18,6 +18,8 @@
   }
 
   @media screen and (min-width: 1280px) {
+    background-position: center bottom;
+    background-size: 1280px;
     padding: 125px 0 39px 0;
     background-image: url('../images/about/about-2-desktop.png');
 
@@ -124,12 +126,12 @@
   margin-bottom: 47px;
 
   @media screen and (min-width: 768px) {
-    @include fonts(14px, 500, 1.18, 0);
+    @include fonts(14px, 500, 1.76, 0);
     margin-bottom: 49px;
   }
 
   @media screen and (min-width: 1280px) {
-    @include fonts(16px, 500, 1.18, 0.04em);
+    @include fonts(16px, 500, 1.76, 0.04em);
     margin-bottom: 35px;
   }
 }
@@ -142,7 +144,7 @@
   min-width: 176px;
   height: 44px;
   font-family: DM Sans;
-  @include fonts(14px, 700, 1.29, 0);
+  @include fonts(14px, 700, 1.28, 0);
   text-align: center;
   color: var(--red--text-color);
   background-color: var(--btnbgwhite--background-color);
