@@ -1,0 +1,90 @@
+.section--about {
+  padding: 125px 0 39px 0;
+  background-size: 100% auto;
+  background-position: center bottom 10%;
+  background-repeat: no-repeat;
+  background-color: var(--bgthird--background--color);
+  background-image: url('../images/About/about-2.png');
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/About/about-2@2x.png');
+  }
+}
+
+// .section--about__content {
+// }
+
+.section--about__picture {
+  max-width: 280px;
+  margin: 0 auto 46px;
+  text-align: center;
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.section--about__description {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.section--about__title {
+  @extend %title;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.section--about__subtitle {
+  @extend %subtitle;
+  text-align: center;
+}
+
+.section--about__text {
+  @include fonts(12px, 500, 1.62, 0);
+  font-family: DM Sans;
+  color: var (--primary-text-color);
+  margin-bottom: 47px;
+}
+
+.section--about__text--grey {
+  color: var(--secondary--text-color);
+}
+
+.section--about__btn {
+  min-width: 176px;
+  height: 44px;
+  font-family: DM Sans;
+  @include fonts(14px, 700, 1.29, 0);
+  text-align: center;
+  color: var(--red--text-color);
+  background-color: var(--btnbgwhite--background-color);
+  cursor: pointer;
+  border-radius: 22px;
+  border: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btnbggrey--background-color);
+  }
+}
+
+// шаблоны заголовков
+%title {
+  @include fonts(34px, 400, 1.15, 0.04em);
+  font-family: Titan One;
+  text-transform: uppercase;
+  color: var(--red--text-color);
+}
+
+%subtitle {
+  @include fonts(18px, 400, 1.17, 0);
+  font-family: Titan One;
+  text-transform: uppercase;
+  color: var(--pink--text-color);
+  margin-bottom: 15px;
+}
