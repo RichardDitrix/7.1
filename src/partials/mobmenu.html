@@ -1,45 +1,36 @@
-<!--<header>
-    <div class="header__container container">
-        <button class="menu-open" type="button" data-menu-open>
-            <svg class="menu-open-icon" width="24" height="16">
-            <use href="./images/icons.svg#icon-burger"></use>
-            </svg>
-        </button>
-    </div>
-    </header> -->
-    
-    <div class="mobmenu is-hidden" data-menu>
-       
-        <button class="menu-close" type="button" data-menu-close><svg class="menu-close-icon" width="14" height="14">
-            <use href="./images/icons.svg#icon-close">
-            </use>
-          </svg>
-        </button>
-
-        <button class="mobmenu__buy-btn" type="button" >
-          <svg class="" width="7" height="7">
-            <use href="./images/icons.svg#icon-arrow"></use>
-          </svg>
-        </button>
-        
-          <div class="mobmenu__menu">
-          <ul class="mobmenu__list list">
-            <li class="mobmenu__item">
-              <a href="" class="mobmenu__link change-color">Home</a>
-            </li>
-            <li class="mob-menu-item">
-              <a href="" class="mobmenu__link mob-color">About us</a>
-            </li>
-            <li class="mob-menu-item">
-              <a href="" class="mobmenu__link change-color">How it’s made?</a>
-            </li>
-            <li class="mob-menu-item">
-              <a href="" class="mobmenu__link mob-color">Our products</a>
-            </li>
-            <li class="mob-menu-item">
-              <a href="" class="mobmenu__link change-color">Contact</a>
-            </li>
-          </ul>
-         
-        </div>
-    
+<div class="modal-mob-menu container is-hidden" data-menu>
+  <div class="close-btn">
+    <button class="menu-close-btn" type="button" data-menu-close><svg class="menu-close-btn-icon" width="14"
+        height="14">
+        <use href="./images/icons.svg#icon-close">
+        </use>
+      </svg></button>
+  </div>
+  <div class="buy-btn">
+    <button type="button" class="buy-button">
+      Buy now
+      <svg class="header-button__icon" width="5" height="8">
+        <use href="./images/icons.svg#icon-arrow-btn"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="block-list">
+    <ul class="block-menu-list">
+      <li class="block-menu-item">
+        <a href="#header-hero" class="block-menu-link mob-color">Home</a>
+      </li>
+      <li class="block-menu-item">
+        <a href="#advantages" class="block-menu-link change-color">About us</a>
+      </li>
+      <li class="block-menu-item">
+        <a href="#about" class="block-menu-link change-color">How it’s made?</a>
+      </li>
+      <li class="block-menu-item">
+        <a href="#products" class="block-menu-link change-color">Our products</a>
+      </li>
+      <li class="block-menu-item">
+        <a href="#contacts" class="block-menu-link change-color">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <script src="./js/menu.js"></script>
