@@ -1,0 +1,44 @@
+.contacts-backdrop {
+  width: 100vw;
+  height: 100vw;
+  background-color: var(--red--text-color);
+  position: fixed;
+  top: 0;
+}
+
+.contacts-modal {
+  position: absolute;
+  z-index: 1000;
+  width: 500px;
+  min-height: 600px;
+  background-color: var(--bgthird--background--color);
+  border-radius: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contacts-modal__btn {
+  border: 1px solid var(---circle-background-color);
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 1001;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-modal__icon {
+  fill: var(--primary--text-color);
+}
+
+.contacts-backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
