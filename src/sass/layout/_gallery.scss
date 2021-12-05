@@ -1,3 +1,12 @@
+.gallery {
+  background-image: linear-gradient(
+    to bottom,
+    var(--bgthird--background--color) 40%,
+    var(--gallery--background-color) 40%,
+    var(--gallery--background-color) 60%
+  );
+}
+
 .gallery__container {
   padding: 0;
   height: 100%;
