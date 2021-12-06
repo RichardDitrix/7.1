@@ -2,31 +2,38 @@
   <header class="hero-header">
     <div class="container">
       <div class="header">
-  
         <!-- Меню навигации -->
-  
+
         <nav class="main-nav">
           <a href="/" class="logo-link">
             <img src="./images/hero-header/logo.png" class="logo" width="199" height="50" />
           </a>
-  
+
           <ul class="site-nav list">
             <li class="site-nav__item"><a href="/" class="current site-nav__link link">Home</a></li>
-            <li class="site-nav__item"><a href="#about" class="site-nav__link link">about us</a></li>
-            <li class="site-nav__item"><a href="#about" class="site-nav__link link">How it’s made?</a></li>
-            <li class="site-nav__item"><a href="#products" class="site-nav__link link">Our products</a></li>
-            <li class="site-nav__item"><a href="#contacts" class="site-nav__link link">Contact</a></li>
+            <li class="site-nav__item">
+              <a href="#about" class="site-nav__link link">About us</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#about" class="site-nav__link link">How it’s made?</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#products" class="site-nav__link link">Our products</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#contacts" class="site-nav__link link">Contact</a>
+            </li>
           </ul>
         </nav>
-  
+
         <!-- Кнопка открытия мобильного меню -->
-  
+
         <button type="button" class="menu-open" aria-label="menu-open" data-menu-open>
           <svg class="" width="30" height="19">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
-  
+
         <!-- Кнопка купить сейчас -->
         <button type="button" class="header-button">
           Buy now
@@ -37,59 +44,111 @@
       </div>
     </div>
   </header>
-  
-  
+
   <!-- Герой -->
-  
+
   <section class="hero">
     <div class="container">
-  
       <!-- Фон мороженого (элипс) -->
-  
+
       <div class="hero-ice-cream">
         <picture>
-          <source media="(min-width: 1280px)" srcset="./images/hero-header/ellipse-desktop.webp         1x,
-                          ./images/hero-header/ellipse-desktop@2x.webp      2x" type="image/webp" />
-          <source media="(min-width: 1280px)" srcset="./images/hero-header/ellipse-desktop.png          1x,
-                          ./images/hero-header/ellipse-desktop@2x.png       2x" />
-  
-          <source media="(min-width: 768px)" srcset="./images/hero-header/ellipse-tablet.webp          1x,
-                          ./images/hero-header/ellipse-tablet@2x.webp       2x" type="image/webp" />
-          <source media="(min-width: 768px)" srcset="./images/hero-header/ellipse-tablet.png           1x,
-                          ./images/hero-header/ellipse-tablet@2x.png        2x" />
-  
-          <source media="(max-width: 767px)" srcset="./images/hero-header/ellipse.webp                 1x,
-                          ./images/hero-header/ellipse@2x.webp              2x" type="image/webp" />
-          <source media="(max-width: 767px)" srcset="./images/hero-header/ellipse.png                  1x,
-                          ./images/hero-header/ellipse@2x.png               2x" />
-  
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/hero-header/ellipse-desktop.webp    1x,
+              ./images/hero-header/ellipse-desktop@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/hero-header/ellipse-desktop.png    1x,
+              ./images/hero-header/ellipse-desktop@2x.png 2x
+            "
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero-header/ellipse-tablet.webp    1x,
+              ./images/hero-header/ellipse-tablet@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero-header/ellipse-tablet.png    1x,
+              ./images/hero-header/ellipse-tablet@2x.png 2x
+            "
+          />
+
+          <source
+            media="(max-width: 767px)"
+            srcset="./images/hero-header/ellipse.webp 1x, ./images/hero-header/ellipse@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="./images/hero-header/ellipse.png 1x, ./images/hero-header/ellipse@2x.png 2x"
+          />
+
           <img class="" src="./images/hero-header/ellipse.png" alt="Ellipse" />
         </picture>
-        
+
         <!-- Основное изображение "Мороженое" -->
 
         <picture>
-          <source media="(min-width: 1280px)" srcset="./images/hero-header/hero-desktop.webp         1x,
-                            ./images/hero-header/hero-desktop@2x.webp      2x" type="image/webp" />
-          <source media="(min-width: 1280px)" srcset="./images/hero-header/hero-desktop.png          1x,
-                          ./images/hero-header/hero-desktop@2x.png       2x" />
-  
-          <source media="(min-width: 768px)" srcset="./images/hero-header/hero-tablet.webp          1x,
-                          ./images/hero-header/hero-tablet@2x.webp       2x" type="image/webp" />
-          <source media="(min-width: 768px)" srcset="./images/hero-header/hero-tablet.png           1x,
-                          ./images/hero-header/hero-tablet@2x.png        2x" />
-  
-          <source media="(max-width: 767px)" srcset="./images/hero-header/hero.webp                 1x,
-                          ./images/hero-header/hero@2x.webp              2x" type="image/webp" />
-          <source media="(max-width: 767px)" srcset="./images/hero-header/hero.png                  1x,
-                          ./images/hero-header/hero@2x.png               2x" />
-  
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/hero-header/hero-desktop.webp    1x,
+              ./images/hero-header/hero-desktop@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/hero-header/hero-desktop.png    1x,
+              ./images/hero-header/hero-desktop@2x.png 2x
+            "
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero-header/hero-tablet.webp    1x,
+              ./images/hero-header/hero-tablet@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero-header/hero-tablet.png    1x,
+              ./images/hero-header/hero-tablet@2x.png 2x
+            "
+          />
+
+          <source
+            media="(max-width: 767px)"
+            srcset="./images/hero-header/hero.webp 1x, ./images/hero-header/hero@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="./images/hero-header/hero.png 1x, ./images/hero-header/hero@2x.png 2x"
+          />
+
           <img class="ice-cream-photo" src="./images/hero-header/hero.png" alt="Ice Cream" />
         </picture>
       </div>
-  
+
       <!-- Основной заголовок с кнопками -->
-  
+
       <div class="hero-title">
         <h1 class="hero-title__main">
           ICE CREAM MADE WITH <span class="hero-title__passion">PASSION</span>
@@ -99,40 +158,63 @@
           <a href="#about" class="hero-btn__second">How it’s made?</a>
         </div>
       </div>
-  
+
       <!-- Количество кафе и фуд-траков -->
-  
+
       <div class="hero-coffeehouse">
-        <p class="hero-coffeehouse__descr one"><span class="hero-coffeehouse__title one">16</span> cafes
+        <p class="hero-coffeehouse__descr one">
+          <span class="hero-coffeehouse__title one">16</span> cafes
           <svg class="hero-coffeehouse__icon" width="16" height="16">
             <use href="./images/icons.svg#icon-ellipse-small"></use>
           </svg>
         </p>
-        <p class="hero-coffeehouse__descr second"><span class="hero-coffeehouse__title second">23</span> food trucks
+        <p class="hero-coffeehouse__descr second">
+          <span class="hero-coffeehouse__title second">23</span> food trucks
           <svg class="hero-coffeehouse__icon" width="16" height="16">
             <use href="./images/icons.svg#icon-ellipse-small"></use>
           </svg>
         </p>
       </div>
-  
+
       <!-- Кувшин с молоком и описание     -->
-  
+
       <div class="hero-milk">
         <div class="hero-milk__image">
-          
           <!-- Изображение кувшина с молоком -->
 
           <picture>
-            <source media="(min-width: 1280px)" srcset="./images/hero-header/hero-milk-desktop.webp        1x,
-                            ./images/hero-header/hero-milk-desktop@2x.webp      2x" type="image/webp" />
-            <source media="(min-width: 1280px)" srcset="./images/hero-header/hero-milk-desktop.png         1x,
-                            ./images/hero-header/hero-milk-desktop@2x.png       2x" />
-  
-            <source media="(min-width: 768px)" srcset="./images/hero-header/hero-milk-tablet.webp          1x,
-                            ./images/hero-header/hero-milk-tablet@2x.webp       2x" type="image/webp" />
-            <source media="(min-width: 768px)" srcset="./images/hero-header/hero-milk-tablet.png           1x,
-                            ./images/hero-header/hero-milk-tablet@2x.png        2x" />
-  
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/hero-header/hero-milk-desktop.webp    1x,
+                ./images/hero-header/hero-milk-desktop@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/hero-header/hero-milk-desktop.png    1x,
+                ./images/hero-header/hero-milk-desktop@2x.png 2x
+              "
+            />
+
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/hero-header/hero-milk-tablet.webp    1x,
+                ./images/hero-header/hero-milk-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/hero-header/hero-milk-tablet.png    1x,
+                ./images/hero-header/hero-milk-tablet@2x.png 2x
+              "
+            />
+
             <img class="" src="./images/hero-header/hero-milk-desktop.png" alt="Milk" />
           </picture>
         </div>
@@ -141,8 +223,8 @@
 
         <div class="hero-milk__description">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
           </p>
           <button type="button" class="hero-description__btn">
             <svg class="hero-description__arrow">
@@ -151,21 +233,43 @@
           </button>
         </div>
       </div>
-  
+
       <!-- Изображение девушки -->
-  
+
       <div class="hero-girl">
         <picture>
-          <source media="(min-width: 1280px)" srcset="./images/hero-header/girl-desktop.webp        1x,
-                          ./images/hero-header/girl-desktop@2x.webp      2x" type="image/webp" />
-          <source media="(min-width: 1280px)" srcset="./images/hero-header/girl-desktop.png         1x,
-                          ./images/hero-header/girl-desktop@2x.png       2x" />
-  
-          <source media="(min-width: 768px)" srcset="./images/hero-header/girl-tablet.webp          1x,
-                          ./images/hero-header/girl-tablet@2x.webp       2x" type="image/webp" />
-          <source media="(min-width: 768px)" srcset="./images/hero-header/girl-tablet.png           1x,
-                          ./images/hero-header/girl-tablet@2x.png        2x" />
-  
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/hero-header/girl-desktop.webp    1x,
+              ./images/hero-header/girl-desktop@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/hero-header/girl-desktop.png    1x,
+              ./images/hero-header/girl-desktop@2x.png 2x
+            "
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero-header/girl-tablet.webp    1x,
+              ./images/hero-header/girl-tablet@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero-header/girl-tablet.png    1x,
+              ./images/hero-header/girl-tablet@2x.png 2x
+            "
+          />
+
           <img class="" src="./images/hero-header/girl-desktop.png" alt="Girl" />
         </picture>
       </div>
