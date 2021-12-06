@@ -5,6 +5,7 @@
 
   @media screen and(max-width:767px) {
     padding-top: 6px;
+    justify-content: space-between;
   }
 }
 
@@ -43,6 +44,7 @@
   align-items: center;
   font-family: inherit;
   justify-content: center;
+  text-decoration: none;
   min-width: 159px;
   height: 44px;
   border: 0;
@@ -61,68 +63,10 @@
   }
 }
 
-.menu-open,
-.menu-close {
-  display: flex;
-  border: none;
-  padding: 0;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  background-color: transparent;
-}
-
-.menu-close {
-  @media screen and(min-width: 1279px) {
-    display: none;
-  }
-}
-
 .menu-open {
-  @media screen and(min-width: 768px) {
-    display: none;
-  }
-}
-
-.mob-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #e17992;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 1;
-
-  &.is-hidden {
-    pointer-events: none;
-    opacity: 0;
-    visibility: auto;
-  }
-}
-
-.menu-open {
-  display: flex;
-  border: none;
-  padding: 0;
-  width: 20px;
-  height: 13px;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  background-color: transparent;
-  fill: var(--btnred--text-color);
   @media screen and(min-width:1280px) {
     display: none;
   }
-}
-
-.menu-close {
-  fill: var(--btnbgwhite--background-color);
-  background-color: transparent;
-  border: none;
 }
 
 .hero-btn__one {
@@ -291,8 +235,8 @@
   }
 
   @media screen and(max-width: 767px) {
-    right: 32px;
-    top: 36px;
+    right: 0;
+    top: 27px;
     height: 345px;
   }
 
@@ -302,24 +246,11 @@
   }
 }
 
-// .hero-ice-cream:before {
-//   content: '';
-//   position: relative;
-//   width: 455px;
-//   height: 455px;
-//   border-radius: 50%;
-//   background: var(--bgsecond--backgorund-color);
-//   top: 0;
-//   left: 136px;
-//   overflow: hidden;
-//   display: block;
-// }
-
-// .ice-cream-photo {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-// }
+.ice-cream-photo {
+  position: absolute;
+  top: 9px;
+  right: 32px;
+}
 
 .hero-girl {
   position: absolute;

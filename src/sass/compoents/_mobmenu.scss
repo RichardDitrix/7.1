@@ -10,7 +10,7 @@
   @media screen and (min-width: 768px) and (min-width: 1199px) {
     padding-left: 24px;
     padding-right: 24px;
-    }
+  }
   &.is-hidden {
     pointer-events: none;
     opacity: 0;
@@ -19,18 +19,18 @@
     justify-content: space-between;
     flex-direction: column;
     @media screen and (min-width: 1280px) {
-    display: none;
-  }
+      display: none;
+    }
   }
 }
 
 .buy-btn {
   display: block;
-  margin: 60px auto 19px auto; 
+  margin: 60px auto 19px auto;
   @media screen and (min-width: 768px) and (min-width: 1199px) {
     margin-left: 10px;
     margin-right: 10px;
-    }
+  }
 }
 
 .buy-button {
@@ -55,7 +55,7 @@
   color: var(--red--text-color);
   @media screen and (min-width: 768px) and (min-width: 1199px) {
     width: 186px;
-    }
+  }
 }
 
 .block-list {
@@ -97,8 +97,6 @@
 .menu-open {
   width: 20px;
   height: 12px;
-  position: absolute;
-  right: 34px;
 }
 
 .menu-open,
