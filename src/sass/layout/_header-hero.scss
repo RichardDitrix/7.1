@@ -56,6 +56,12 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+  margin-left: auto;
+
+  &:hover,
+  &:focus {
+    background: var(--btnbggrey--background-color);
+  }
 
   @media screen and(max-width: 767px) {
     display: none;
@@ -91,6 +97,10 @@
   font-size: 8px;
   line-height: 1.25;
   border-radius: 20px;
+  &:hover,
+  &:focus {
+    background: var(--btnbggrey--background-color);
+  }
 
   @media screen and(min-width: 1280px) {
     margin-left: 15px;
@@ -117,6 +127,7 @@
 
 .main-nav {
   display: flex;
+  z-index: 1;
 }
 
 .site-nav {
@@ -136,6 +147,10 @@
 
 .site-nav__link {
   color: var(--white--text-color);
+  &:hover,
+  &:focus {
+    color: var(--red--text-color);
+  }
 }
 
 .site-nav .site-nav__item + .site-nav__item {
@@ -151,7 +166,7 @@
   }
 
   @media screen and(min-width: 1280px) {
-    height: 581px;
+    height: 578px;
   }
 }
 
@@ -198,6 +213,7 @@
   @media screen and(min-width:1280px) {
     width: 277px;
     font-size: 38px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -223,6 +239,10 @@
   @media screen and(max-width:767px) {
     display: none;
   }
+
+  @media screen and(min-width:1280px) {
+    top: 69px;
+  }
 }
 
 .hero-coffeehouse__title {
@@ -244,13 +264,10 @@
   color: var(--white--text-color);
   display: flex;
   flex-direction: column;
+  font-size: 8px;
+  line-height: 1.25;
 
-  @media screen and(max-width: 1279px) {
-    font-size: 8px;
-    line-height: 1.25;
-  }
-
-  @media screen and(mix-width: 1280px) {
+  @media screen and(min-width: 1280px) {
     font-size: 14px;
     line-height: 1.29;
   }
@@ -260,10 +277,18 @@
   width: 43px;
   margin-left: auto;
   text-align: center;
+
+  @media screen and(min-width:1280px) {
+    width: 72px;
+  }
 }
 
 .hero-coffeehouse__descr.second {
   width: 51px;
+
+  @media screen and(min-width:1280px) {
+    width: 92px;
+  }
 }
 
 .hero-coffeehouse__title.one {
@@ -278,6 +303,11 @@
   position: absolute;
   top: 0;
   right: 0;
+
+  @media screen and(min-width:1280px) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .hero-ice-cream {
@@ -294,20 +324,31 @@
   }
 
   @media screen and(min-width: 1280px) {
+    top: -35px;
     left: 517px;
   }
 }
 
 .ice-cream-photo {
   position: absolute;
-  top: 32px;
-  left: 71px;
+  top: 9px;
+  right: 32px;
+
+  @media screen and(min-width:768px) {
+    top: 32px;
+    right: 110px;
+  }
+
+  @media screen and(min-width:1280px) {
+    top: 56px;
+    right: 183px;
+  }
 }
 
 .hero-girl {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 20px;
 
   @media screen and(max-width:767px) {
     display: none;
@@ -321,6 +362,10 @@
 
   @media screen and(max-width:767px) {
     display: none;
+  }
+
+  @media screen and(min-width:1280px) {
+    bottom: 48px;
   }
 }
 
@@ -341,6 +386,7 @@
     font-size: 14px;
     line-height: 1.4;
     width: 200px;
+    margin-left: 30px;
   }
 }
 
@@ -364,10 +410,19 @@
   }
 }
 
+.hero-description__arrow {
+  width: 5px;
+  height: 5px;
+
+  @media screen and(min-width:1280px) {
+    width: 7px;
+    height: 7px;
+  }
+}
+
 .hero-milk__image {
   display: flex;
   align-items: center;
-  // margin-top: 56px;
 
   @media screen and(max-width:767px) {
     display: none;
