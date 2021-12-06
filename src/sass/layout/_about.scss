@@ -1,7 +1,7 @@
 .section--about {
   padding: 125px 0 39px 0;
   background-size: contain;
-  background-position: center bottom 10%;
+   background-position: center bottom 60px;
   background-repeat: no-repeat;
   background-color: var(--bgthird--background--color);
   background-image: url('../images/about/about-2.png');
@@ -123,16 +123,14 @@
   @include fonts(12px, 500, 1.62, 0);
   font-family: DM Sans;
   color: var (--primary-text-color);
-  margin-bottom: 47px;
+  margin-bottom: 35px;
 
   @media screen and (min-width: 768px) {
     @include fonts(14px, 500, 1.76, 0);
-    margin-bottom: 49px;
   }
 
   @media screen and (min-width: 1280px) {
     @include fonts(16px, 500, 1.76, 0.04em);
-    margin-bottom: 35px;
   }
 }
 
