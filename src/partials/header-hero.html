@@ -118,32 +118,77 @@
 <!-- Количество кафе и фуд-траков -->
 
     <div class="hero-coffeehouse">
-      <p class="hero-coffeehouse__descr"><span class="hero-coffeehouse__title">16</span> cafes</p>
-      <p class="hero-coffeehouse__descr"><span class="hero-coffeehouse__title">23</span> food trucks</p>
+      <p class="hero-coffeehouse__descr one"><span class="hero-coffeehouse__title one">16</span> cafes
+        <svg class="hero-coffeehouse__icon" width="16" height="16">
+          <use href="./images/icons.svg#icon-ellipse-small"></use>
+        </svg>
+      </p>
+      <p class="hero-coffeehouse__descr second"><span class="hero-coffeehouse__title second">23</span> food trucks
+        <svg class="hero-coffeehouse__icon" width="16" height="16">
+          <use href="./images/icons.svg#icon-ellipse-small"></use>
+        </svg>
+      </p>
     </div>
 
 <!-- Кувшин с молоком и описание     -->
 
-    <div class="hero-milk-description">
-      <img src="./images/hero-header/hero-milk-desktop.png" width="188" height="191" alt="Milk" />
-      <div class="hero-description">
+    <div class="hero-milk">
+      <div class="hero-milk__image">
+        <picture>
+          <source media="(min-width: 1280px)" 
+                  srcset="./images/hero-header/hero-milk-desktop.webp         1x,
+                          ./images/hero-header/hero-milk-desktop@2x.webp      2x" 
+                  type="image/webp" />
+          <source media="(min-width: 1280px)" 
+                  srcset="./images/hero-header/hero-milk-desktop.png          1x,
+                          ./images/hero-header/hero-milk-desktop@2x.png       2x" />
+      
+          <source media="(min-width: 768px)" 
+                  srcset="./images/hero-header/hero-milk-tablet.webp          1x,
+                          ./images/hero-header/hero-milk-tablet@2x.webp       2x" 
+                  type="image/webp" />
+          <source media="(min-width: 768px)" 
+                  srcset="./images/hero-header/hero-milk-tablet.png           1x,
+                          ./images/hero-header/hero-milk-tablet@2x.png        2x" />
+      
+          <img class="" src="./images/hero-header/hero-milk-desktop.png" alt="Milk" />
+        </picture>
+      </div>
+      <div class="hero-milk__description">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
         <button type="button" class="hero-description__btn">
-          <svg class="" width="7" height="7">
-            <use href="./images/icons.svg#icon-arrow"></use>
+          <svg class="" width="5" height="5">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
           </svg>
         </button>
       </div>
     </div>
 
-
 <!-- Изображение девушки -->
 
     <div class="hero-girl">
-      <img src="./images/hero-header/girl-desktop.png" width="293" height="232" alt="Girl" />
+      <picture>
+        <source media="(min-width: 1280px)" 
+                srcset="./images/hero-header/girl-desktop.webp         1x,
+                        ./images/hero-header/girl-desktop@2x.webp      2x" 
+                type="image/webp" />
+        <source media="(min-width: 1280px)" 
+                srcset="./images/hero-header/girl-desktop.png          1x,
+                        ./images/hero-header/girl-desktop@2x.png       2x" />
+      
+        <source media="(min-width: 768px)" 
+                srcset="./images/hero-header/girl-tablet.webp          1x,
+                        ./images/hero-header/girl-tablet@2x.webp       2x" 
+                type="image/webp" />
+        <source media="(min-width: 768px)" 
+                srcset="./images/hero-header/girl-tablet.png           1x,
+                        ./images/hero-header/girl-tablet@2x.png        2x" />
+      
+        <img class="" src="./images/hero-header/girl-desktop.png" alt="Girl" />
+      </picture>
     </div>
   </div>
 </section>
