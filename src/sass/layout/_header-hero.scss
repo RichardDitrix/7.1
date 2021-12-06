@@ -24,14 +24,14 @@
 
 .hero-btn {
   display: flex;
-  margin-top: 25px;
+  margin-top: 19px;
 
-  @media screen and(max-width: 767px) {
-    margin-top: 19px;
+  @media screen and(min-width: 768px) {
+    margin-top: 20px;
   }
 
-  @media screen and(max-width: 1279px) {
-    margin-top: 20px;
+  @media screen and(min-width: 1280px) {
+    margin-top: 25px;
   }
 }
 
@@ -39,7 +39,6 @@
 .hero-btn__one,
 .hero-btn__second {
   display: flex;
-  margin-left: auto;
   text-align: center;
   align-items: center;
   font-family: inherit;
@@ -63,44 +62,42 @@
   }
 }
 
-.menu-open {
-  @media screen and(min-width:1280px) {
-    display: none;
-  }
-}
-
 .hero-btn__one {
-  margin: 0;
-  min-width: 104px;
-  height: 40px;
+  min-width: 62px;
+  height: 24px;
   color: var(--white--text-color);
   background-color: var(--btnbgred--background-color);
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.29;
+  font-size: 8px;
+  line-height: 1.25;
 
-  @media screen and(max-width: 1279px) {
-    min-width: 62px;
-    height: 24px;
-    font-size: 8px;
-    line-height: 1.25;
+  @media screen and(min-width: 1280px) {
+    min-width: 104px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.29;
   }
 }
 
 .hero-btn__second {
-  margin-left: 15px;
-  min-width: 138px;
-  height: 40px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.29;
+  margin-left: 8px;
+  min-width: 83px;
+  height: 24px;
+  font-size: 8px;
+  line-height: 1.25;
 
-  @media screen and(max-width: 1279px) {
-    min-width: 83px;
-    height: 24px;
-    font-size: 8px;
-    line-height: 1.25;
-    margin-left: 8px;
+  @media screen and(min-width: 1280px) {
+    margin-left: 15px;
+    min-width: 138px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.menu-open {
+  @media screen and(min-width:1280px) {
+    display: none;
   }
 }
 
@@ -237,7 +234,6 @@
   @media screen and(max-width: 767px) {
     right: 0;
     top: 27px;
-    height: 345px;
   }
 
   @media screen and(min-width: 767px) and (max-width: 1279px) {
