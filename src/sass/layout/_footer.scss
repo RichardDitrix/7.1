@@ -187,6 +187,7 @@
 }
 
 .footer__copy {
+  display: block;
   font-family: DM Sans;
   @include fonts(14px, 700, 1.52, 0.02em);
 
