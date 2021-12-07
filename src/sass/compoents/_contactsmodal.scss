@@ -17,23 +17,33 @@
 
 .contacts-modal {
   position: absolute;
+
   top: 25%;
-  left: 50%;
-  width: 100%;
+  left: 35%;
+
   background-color: var(--bgthird--background--color);
-  border-radius: 5px;
+  border-radius: 25px;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1);
 
+  width: 160px;
+  height: 128px;
+
   @media screen and (min-width: 480px) {
-    width: 600px;
-    max-height: 450px;
+    width: 240px;
+    height: 192px;
+    left: 50%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 480px;
+    height: 384px;
   }
 
   @media screen and (min-width: 1280px) {
-    min-width: 500px;
-    min-height: 350px;
+    width: 600px;
+    height: 480px;
   }
 }
 
@@ -68,7 +78,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 40px;
-  left: 15px;
-  bottom: 20px;
+  overflow: hidden;
+  border-radius: 25px;
+  transform: translateZ(0px);
+  border: 3px solid #eee;
 }
