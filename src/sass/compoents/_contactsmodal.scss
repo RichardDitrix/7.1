@@ -11,11 +11,11 @@
 
 .contacts-modal {
   position: absolute;
-  top: 25%;
-  left: 35%;
+  top: 50%;
+  left: 50%;
   background-color: var(--bgthird--background--color);
   border-radius: 25px;
-  transform: translate(-50%, -5%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 100%;
@@ -24,7 +24,6 @@
   @media screen and (min-width: 480px) {
     width: 300px;
     height: 450px;
-    left: 50%;
   }
 
   @media screen and (min-width: 768px) {
