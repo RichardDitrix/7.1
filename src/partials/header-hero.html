@@ -7,7 +7,16 @@
 
         <nav class="main-nav">
           <a href="/" class="logo-link" aria-label="Icecream">
-            <img src="./images/hero-header/logo.png" class="logo" alt="Logo" width="199" height="50" />
+            <picture>
+              <source srcset="./images/hero-header/logo.webp    1x,
+                              ./images/hero-header/logo@2x.webp 2x" 
+                      type="image/webp" />
+                      
+              <source srcset="./images/hero-header/logo.png      1x,
+                              ./images/hero-header/logo@2x.png   2x" />
+            
+              <img src="./images/hero-header/logo.png" class="logo" alt="Logo" width="199" height="50" />
+            </picture>
           </a>
 
           <ul class="site-nav list">
