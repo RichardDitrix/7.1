@@ -250,6 +250,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 #read-more-pink:checked ~ .read-more__text {
   display: block;
