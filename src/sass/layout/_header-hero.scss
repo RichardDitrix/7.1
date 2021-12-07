@@ -58,10 +58,13 @@
   line-height: 1.31;
   margin-left: auto;
   z-index: 2;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    background: var(--btnbggrey--background-color);
+    background-color: var(--btnbggrey--background-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   @media screen and(max-width: 767px) {
@@ -82,6 +85,14 @@
   font-size: 8px;
   line-height: 1.25;
   border-radius: 20px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: var(--btn-hover-red-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
   @media screen and(min-width: 1280px) {
     min-width: 104px;
@@ -98,9 +109,13 @@
   font-size: 8px;
   line-height: 1.25;
   border-radius: 20px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
-    background: var(--btnbggrey--background-color);
+    background-color: var(--btnbggrey--background-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   @media screen and(min-width: 1280px) {
@@ -148,6 +163,8 @@
 
 .site-nav__link {
   color: var(--white--text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     color: var(--red--text-color);
@@ -254,6 +271,13 @@
   letter-spacing: 0.04em;
   color: var(--red--text-color);
   z-index: 1;
+  transform: rotate(0);
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    transform: rotate(360deg);
+  }
 
   @media screen and(min-width: 1280px) {
     font-size: 46px;
@@ -314,6 +338,20 @@
 
 .hero-ice-cream {
   position: absolute;
+  animation: scale 1500ms;
+  opacity: 1;
+
+  @keyframes scale {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
 
   @media screen and(max-width: 767px) {
     right: 0;
@@ -335,6 +373,13 @@
   position: absolute;
   top: 9px;
   right: 32px;
+  transform: scale(1);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 
   @media screen and(min-width:768px) {
     top: 32px;
@@ -351,6 +396,27 @@
   position: absolute;
   bottom: 0;
   right: 34px;
+  animation: animateX50 1000ms;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
+  @keyframes animateX50 {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
   @media screen and(max-width:767px) {
     display: none;
@@ -408,6 +474,15 @@
   border-radius: 50%;
   background-color: var(--btnbgwhite--background-color);
   fill: var(--svgsecond--color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--btnbgwhite--background-color);
+    background: var(--btn-hover-red-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
   @media screen and(min-width: 1280px) {
     width: 26px;
@@ -429,6 +504,27 @@
 .hero-milk__image {
   display: flex;
   align-items: center;
+  animation: animateX100 1000ms;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
+  @keyframes animateX100 {
+    0% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
   @media screen and(max-width:767px) {
     display: none;
@@ -445,4 +541,5 @@
 
 .bg-header-hero {
   background-color: var(--bgmain--backgorund-color);
+  overflow: hidden;
 }
