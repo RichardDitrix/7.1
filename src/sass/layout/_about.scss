@@ -1,7 +1,7 @@
 .section--about {
   padding: 125px 0 39px 0;
   background-size: contain;
-   background-position: center bottom 60px;
+  background-position: center bottom 60px;
   background-repeat: no-repeat;
   background-color: var(--bgthird--background--color);
   background-image: url('../images/about/about-2.png');
@@ -26,16 +26,6 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url('../images/about/about-2-desktop@2x.png');
-    }
-  }
-
-  .container {
-    @media screen and (min-width: 768px) {
-      padding: 0 36px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      width: 1122px;
     }
   }
 }
@@ -148,11 +138,13 @@
   cursor: pointer;
   border-radius: 22px;
   border: 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     background-color: var(--btnbggrey--background-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   @media screen and (min-width: 768px) {
