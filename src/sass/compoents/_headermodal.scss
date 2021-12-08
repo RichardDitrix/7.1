@@ -36,11 +36,11 @@
     }
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     max-width: 450px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-image: url(../images/about/about-2-desktop.png);
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -113,7 +113,7 @@
   vertical-align: top;
   color: var(--red--text-color);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 22px;
     line-height: 1.15;
   }
@@ -196,7 +196,7 @@
     vertical-align: top;
     color: rgba(117, 117, 117, 0.5);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 12px;
       line-height: 1.17;
     }
@@ -249,7 +249,7 @@
   vertical-align: top;
   color: var(--white--text-color);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.71;
   }
