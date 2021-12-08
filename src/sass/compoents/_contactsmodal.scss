@@ -96,10 +96,6 @@
   top: 0;
   left: 0;
   transition: opacity 3s cubic-bezier(0.4, 0, 0.2, 1), visibility 3s cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (max-width: 480px) {
-    width: 600px;
-    height: 450px;
-  }
 }
 .contacts-modal {
   position: absolute;
