@@ -48,7 +48,7 @@
 
         <button type="button" class="header-button">
           Buy now
-          <svg class="header-button__icon" width="6" height="10">
+          <svg class="header-button__icon" width="8" height="10">
             <use href="./images/icons.svg#icon-arrow-btn"></use>
           </svg>
         </button>
@@ -60,39 +60,8 @@
 
   <section class="hero">
     <div class="container">
-
-      <!-- Фон мороженого (элипс) -->
-
       <div class="hero-ice-cream">
-        <picture>
-          <source media="(min-width: 1280px)"
-                  srcset="./images/hero-header/ellipse-desktop.webp    1x,
-                          ./images/hero-header/ellipse-desktop@2x.webp 2x"
-                  type="image/webp"/>
-          <source media="(min-width: 1280px)"
-                  srcset="./images/hero-header/ellipse-desktop.png      1x,
-                          ./images/hero-header/ellipse-desktop@2x.png   2x"/>
-
-          <source media="(min-width: 768px)"
-                  srcset="./images/hero-header/ellipse-tablet.webp     1x,
-                          ./images/hero-header/ellipse-tablet@2x.webp  2x"
-                  type="image/webp"/>
-          <source media="(min-width: 768px)"
-                  srcset="./images/hero-header/ellipse-tablet.png    1x,
-                          ./images/hero-header/ellipse-tablet@2x.png 2x"/>
-
-          <source media="(max-width: 767px)"
-                  srcset="./images/hero-header/ellipse.webp          1x, 
-                          ./images/hero-header/ellipse@2x.webp       2x"
-                  type="image/webp"/>
-          
-          <source media="(max-width: 767px)"
-                  srcset="./images/hero-header/ellipse.png          1x, 
-                          ./images/hero-header/ellipse@2x.png       2x"/>
-
-          <img src="./images/hero-header/ellipse.png" alt="Ellipse" />
-        </picture>
-
+        
         <!-- Основное изображение "Мороженое" -->
 
         <picture>
@@ -123,7 +92,7 @@
                   srcset="./images/hero-header/hero.png              1x, 
                           ./images/hero-header/hero@2x.png           2x"/>
 
-          <img class="ice-cream-photo" src="./images/hero-header/hero.png" alt="Ice Cream" />
+          <img class="hero-ice-cream__photo" src="./images/hero-header/hero.png" alt="Ice Cream" />
         </picture>
       </div>
 
@@ -182,7 +151,7 @@
                     srcset="./images/hero-header/hero-milk-tablet.png    1x,
                            ./images/hero-header/hero-milk-tablet@2x.png 2x"/>
 
-            <img class="" src="./images/hero-header/hero-milk-desktop.png" alt="Milk" />
+            <img src="./images/hero-header/hero-milk-desktop.png" alt="Milk" />
           </picture>
         </div>
 
@@ -193,8 +162,8 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
           </p>
-          <button type="button" class="hero-description__btn" aria-label="Description">
-            <svg class="hero-description__arrow">
+          <button type="button" class="hero-milk__description-btn" aria-label="Description">
+            <svg class="hero-milk__description-arrow">
               <use href="./images/icons.svg#icon-arrow-right-new"></use>
             </svg>
           </button>
@@ -223,7 +192,7 @@
                     srcset="./images/hero-header/girl-tablet.png    1x,
                             ./images/hero-header/girl-tablet@2x.png 2x"/>
 
-          <img class="" src="./images/hero-header/girl-desktop.png" alt="Girl" />
+          <img src="./images/hero-header/girl-desktop.png" alt="Girl" />
         </picture>
       </div>
     </div>

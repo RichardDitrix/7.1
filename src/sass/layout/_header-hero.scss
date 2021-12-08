@@ -39,7 +39,6 @@
 .hero-btn__one,
 .hero-btn__second {
   display: flex;
-  text-align: center;
   align-items: center;
   font-family: inherit;
   justify-content: center;
@@ -50,13 +49,12 @@
 }
 
 .header-button {
-  min-width: 160px;
+  min-width: 159px;
   height: 44px;
   border-radius: 22px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  margin-left: auto;
   z-index: 2;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -144,14 +142,14 @@
 .main-nav {
   display: flex;
   z-index: 1;
+  width: 100%;
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-  margin-left: 110px;
-  font-family: DM Sans;
-  font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
@@ -300,20 +298,30 @@
 }
 
 .hero-coffeehouse__descr.one {
+  display: flex;
+  justify-content: end;
   width: 43px;
+  height: 44px;
   margin-left: auto;
+  margin-bottom: 13px;
   text-align: center;
 
   @media screen and(min-width:1280px) {
     width: 72px;
+    height: 77px;
+    margin-bottom: 15px;
   }
 }
 
 .hero-coffeehouse__descr.second {
+  display: flex;
+  justify-content: end;
   width: 51px;
+  height: 43px;
 
   @media screen and(min-width:1280px) {
     width: 92px;
+    height: 76px;
   }
 }
 
@@ -337,6 +345,10 @@
 }
 
 .hero-ice-cream {
+  width: 345px;
+  height: 345px;
+  border-radius: 50%;
+  background-color: var(--bgsecond--backgorund-color);
   position: absolute;
   animation: scale 1500ms;
   opacity: 1;
@@ -354,25 +366,29 @@
   }
 
   @media screen and(max-width: 767px) {
-    right: 0;
+    right: -62px;
     top: 27px;
   }
 
   @media screen and(min-width: 768px) {
+    width: 323px;
+    height: 323px;
     top: -56px;
     left: 307px;
   }
 
   @media screen and(min-width: 1280px) {
+    width: 538px;
+    height: 538px;
     top: -35px;
     left: 517px;
   }
 }
 
-.ice-cream-photo {
+.hero-ice-cream__photo {
   position: absolute;
   top: 9px;
-  right: 32px;
+  right: 94px;
   transform: scale(1);
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -446,6 +462,7 @@
   flex-direction: column;
   justify-content: end;
   width: 114px;
+  padding-bottom: 6px;
   margin-left: -4px;
   font-family: DM Sans;
   font-style: normal;
@@ -462,7 +479,7 @@
   }
 }
 
-.hero-description__btn {
+.hero-milk__description-btn {
   display: flex;
   margin-top: 7px;
   text-align: center;
@@ -491,9 +508,9 @@
   }
 }
 
-.hero-description__arrow {
-  width: 5px;
-  height: 5px;
+.hero-milk__description-arrow {
+  width: 6px;
+  height: 6px;
 
   @media screen and(min-width:1280px) {
     width: 7px;
