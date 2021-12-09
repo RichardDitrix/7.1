@@ -28,7 +28,11 @@
       background-image: url('../images/about/about-2-desktop@2x.png');
     }
   }
+   @media screen and (min-width: 1970px){
+    background-size: 100% 100%;
+   }
 }
+
 
 .section--about__content {
   @media screen and (min-width: 768px) {
