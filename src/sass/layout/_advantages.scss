@@ -1,4 +1,4 @@
-// Section advantages
+// Стилизация секции  advantages
 .advantages {
   padding-top: 0;
   padding-bottom: 100px;
@@ -23,6 +23,7 @@
   }
 }
 
+// Добавляет иконки через псевдоэлемент ::before
 .advantages__item {
   width: 100%;
 
@@ -91,6 +92,7 @@
   }
 }
 
+// Добавляет анимацию
 .advantages__accent {
   display: inline-block;
   font-family: Titan One;
