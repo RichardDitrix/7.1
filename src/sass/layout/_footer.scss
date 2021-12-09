@@ -22,6 +22,8 @@
   }
 }
 
+// Дублированный заголовок
+
 .footer__block-text {
   width: 234px;
 
@@ -71,6 +73,8 @@
     margin-bottom: 97px;
   }
 }
+
+// Список социальных сетей
 
 .footer__social {
   @media screen and (min-width: 768px) {
@@ -173,6 +177,8 @@
   color: var(--red--text-color);
 }
 
+// Горизонтальная линия
+
 .line {
   min-width: 100%;
   height: 0px;
@@ -187,6 +193,8 @@
     margin-bottom: 9px;
   }
 }
+
+// Авторское право
 
 .footer__copy {
   display: block;
