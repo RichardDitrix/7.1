@@ -13,6 +13,12 @@
   display: block;
 }
 
+.logo-link {
+  @media screen and(min-width:1280px) {
+    margin-left: -68px;
+  }
+}
+
 .hero-header {
   display: flex;
   background-color: #ffb8ca;
