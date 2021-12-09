@@ -12,14 +12,16 @@
   color: var(--pink--text-color);
 }
 .products__title {
-  margin-bottom: 150px;
   font-family: Titan One;
   @include fonts(34px, 400, 1.15, 0.04em);
   text-align: center;
   text-transform: uppercase;
   color: var(--red--text-color);
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 150px;
+  }
   @media screen and (min-width: 1280px) {
-    margin-bottom: 170px;
+    margin-bottom: 260px;
   }
 }
 .products__list {
@@ -52,15 +54,13 @@
   position: relative;
   border-radius: 24px;
   background: var(--bgmain--backgorund-color);
+  transition: all 0.6s ease;
   &::before {
     position: absolute;
-    top: -30%;
-    left: 50%;
-    transform: translate(-50%);
+    top: -40%;
+    left: 0;
     content: '';
     display: block;
-    width: 249px;
-    height: 252px;
     background: {
       image: url('../images/products/products-1.png');
       size: cover;
@@ -72,13 +72,20 @@
       background-image: url('../images/products/products-1@2x.png');
     }
     @media screen and (max-width: 767px) {
-      margin-top: 35px;
+      width: 249px;
+      height: 252px;
+      left: 5%;
+      margin-top: 85px;
     }
     @media screen and (min-width: 768px) {
-      margin-top: 60px;
+      margin-top: 120px;
+      width: 220px;
+      height: 225px;
     }
     @media screen and (min-width: 1280px) {
-      margin-top: 0;
+      width: 335px;
+      height: 340px;
+      margin-top: 0px;
     }
   }
   @media screen and (max-width: 767px) {
@@ -98,15 +105,13 @@
   position: relative;
   border-radius: 24px;
   background: var(--bgyellow--backgorund-color);
+  transition: all 0.6s ease;
   &::before {
     position: absolute;
-    top: -30%;
-    left: 50%;
-    transform: translate(-50%);
+    top: -40%;
+    left: 0;
     content: '';
     display: block;
-    width: 249px;
-    height: 252px;
     background: {
       image: url('../images/products/products-2.png');
       size: cover;
@@ -118,13 +123,20 @@
       background-image: url('../images/products/products-2@2x.png');
     }
     @media screen and (max-width: 767px) {
-      margin-top: 35px;
+      width: 249px;
+      height: 252px;
+      left: 5%;
+      margin-top: 85px;
     }
     @media screen and (min-width: 768px) {
-      margin-top: 60px;
+      margin-top: 120px;
+      width: 220px;
+      height: 225px;
     }
     @media screen and (min-width: 1280px) {
-      margin-top: 0;
+      width: 335px;
+      height: 340px;
+      margin-top: 0px;
     }
   }
   @media screen and (max-width: 767px) {
@@ -144,14 +156,13 @@
   position: relative;
   border-radius: 24px;
   background: var(--bggreen--backgorund-color);
+  transition: all 0.6s ease;
   &::before {
     position: absolute;
-    top: -30%;
-    left: 50%;
-    transform: translate(-50%);
+    top: -40%;
+    left: 0;
     content: '';
     display: block;
-    margin-right: 10px;
     width: 249px;
     height: 252px;
     background: {
@@ -165,13 +176,20 @@
       background-image: url('../images/products/products-3@2x.png');
     }
     @media screen and (max-width: 767px) {
-      margin-top: 35px;
+      width: 249px;
+      height: 252px;
+      left: 5%;
+      margin-top: 85px;
     }
     @media screen and (min-width: 768px) {
-      margin-top: 60px;
+      margin-top: 120px;
+      width: 220px;
+      height: 225px;
     }
     @media screen and (min-width: 1280px) {
-      margin-top: 0;
+      width: 335px;
+      height: 340px;
+      margin-top: 0px;
     }
   }
   @media screen and (max-width: 767px) {
@@ -274,10 +292,7 @@
     @include fonts(16px, 700, 1.52, 0.04em);
   }
 }
-#read-more-pink:checked ~ .product-wrap--pink::before {
-  position: absolute;
-  top: -30%;
-}
+
 #read-more-pink:checked ~ .read-more__text {
   display: block;
 }
@@ -385,7 +400,6 @@
   fill: var(--btnbgwhite--background-color);
   display: block;
 }
-
 #read-more-pink:checked ~ .read-more__text {
   animation-name: open;
   animation-duration: 1s;
