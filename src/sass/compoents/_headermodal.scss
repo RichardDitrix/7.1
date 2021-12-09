@@ -1,4 +1,4 @@
-// Header modal
+// Стилизация модального окна
 
 .header-modal__backdrop {
   z-index: 100;
@@ -98,7 +98,7 @@
   }
 }
 
-// Modal form
+// Стилизация формы в модальном окне
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -210,7 +210,7 @@
   }
 }
 
-//Modal checkbox
+//Стидизация чекбокса
 
 .modal-form__checkbox-label {
   display: flex;
