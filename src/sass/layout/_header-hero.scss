@@ -80,6 +80,14 @@
   }
 }
 
+.hide-btn {
+  display: none;
+
+  @media screen and(min-width:1280px) {
+    display: flex;
+  }
+}
+
 .hero-btn__one {
   min-width: 62px;
   height: 24px;
